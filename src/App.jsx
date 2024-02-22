@@ -1,5 +1,6 @@
 import './App.css'
 import Headers from './Headers'
+import Socialmedia from './Socialmedia'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <div className="main">
         <Headers />
+        <Socialmedia/>
       </div>
     </>
   )
