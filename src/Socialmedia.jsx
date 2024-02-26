@@ -1,3 +1,5 @@
+import './SocialMedia.css';
+
 const Socialmedia = () => {
     return ( 
         <div className="media">
