@@ -188,37 +188,3 @@ p + p {
     text-align: center;
     padding: 1rem 1rem;
 }
-
-/* Media Query for screens with a maximum width of 768px */
-@media (max-width: 768px) {
-    .head {
-        flex-direction: column;
-     
-        align-items: center;
-    }
-    .head > img {
-        padding: 0.2rem, 1rem; /* Adjust padding for smaller screens */
-        width: 30%; /* Set image width to 70% of the container */
-        height: auto;
-    }
-
-    .clubname {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
-        text-align: center; /* Center align clubname for smaller screens */
-        padding: 1rem; /* Add padding for better spacing */
-        margin-top: 0.5rem; /* Add margin to separate the image and clubname */
-    }
-    
-
-    
-
-    .card {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .footer_design {
-        font-size: 1rem;
-        padding: 1rem;
-    }
-}
