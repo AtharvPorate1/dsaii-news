@@ -218,3 +218,15 @@ p+p {
   text-align: center;
   padding: 1rem 1rem;
 }
+
+/* caroudel css goes here.. */
+.image-container-carousel {
+  padding: 1rem 15rem;
+}
+
+.image-container-carousel>img {
+  height: 70vh;
+  width: 40vb;
+  padding: 1rem 1rem;
+  border-radius: 30px;
+}

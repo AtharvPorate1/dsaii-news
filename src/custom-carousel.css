@@ -1,0 +1,14 @@
+
+.legend1 {
+  border: 2px solid black;
+  margin: 1rem auto;
+  background-color: bisque;
+  width: 63%;
+  height: 10vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
