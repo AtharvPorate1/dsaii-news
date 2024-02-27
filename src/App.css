@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
 * {
     margin: 0px;
     padding: 0px;
-
+    box-sizing: border-box;
 }
 
 h1{
@@ -36,7 +39,7 @@ p{
  /*body goes here*/
 
  body{
-    background: url("magicpattern-noise-1709014171602.png") no-repeat center center/cover;
+    /* background: url("magicpattern-noise-1709014171602.png") no-repeat center center/cover; */
     border: 4px solid black;
     margin: 1rem 2rem;
  }
@@ -48,13 +51,10 @@ p{
         align-items: center;
         margin-top: 0px 0px;
     }
-}
 
-
-.clubname {
-    text-align: left;
-    flex-grow: 1;
-    font-size: 3.5rem;
+    body{
+        margin: 0px;
+    }
 }
 
 .media {
