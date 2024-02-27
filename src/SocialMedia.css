@@ -1,21 +1,13 @@
 .media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
+    
     border-top: 4px solid black;
-    padding: 1rem; /* Add padding for better spacing */
+   
 }
 
-.icon {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 0.5rem;
-}
-
+/* Common styles for both desktop and mobile */
 .icons {
     display: flex;
-    flex-direction: row; /* Change flex-direction to column */
+    flex-direction: row;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -23,6 +15,12 @@
     gap: 2rem;
     padding: 0.5rem 0.5rem;
     margin: 0.5rem 0.5rem;
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.5rem;
 }
 
 .icons a {
@@ -34,12 +32,19 @@
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
     .icons {
-        flex-direction: column; /* Change flex-direction to column */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: flex-start; /* Align items to the start of the flex container */
         gap: 1rem; /* Reduce the gap between items */
     }
 
+    .icons a{
+        font-size: 0.7rem;
+    }
     .icon {
-        width: 3rem; /* Decrease icon size */
-        height: 3rem; /* Decrease icon size */
+        width: 1.5rem; /* Decrease icon size */
+        height: 1.5rem; /* Decrease icon size */
+        margin-right: 0.5rem;
     }
 }
+
+

@@ -22,3 +22,14 @@
   height: 50vh;
   width: 50vb;
 }
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .carousel-slide {
+    padding: 2rem; /* Adjust padding for even smaller screens */
+  }
+
+  .legend1 {
+    font-size: 1rem; /* Decrease font size on smaller screens */
+  }
+}
