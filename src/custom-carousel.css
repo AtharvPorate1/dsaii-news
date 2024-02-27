@@ -1,8 +1,11 @@
+.carousel-slide {
+  padding: 5rem 20rem;
+  border-top: 2px solid black;
+}
+
 
 .legend1 {
-  border: 2px solid black;
   margin: 1rem auto;
-  background-color: bisque;
   width: 63%;
   height: 10vh; 
   display: flex;
@@ -12,3 +15,8 @@
   font-size: 1.5rem;
 }
 
+.image-container-carousel > img{
+  height: 75vh;
+  border: 2px solid black;
+  width: 50vb;
+}
