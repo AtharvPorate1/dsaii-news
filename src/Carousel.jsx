@@ -16,13 +16,13 @@ class MyCarousel extends Component {
                 </div>
                 <div className='carousel-slide'>
                     <div className='image-container-carousel'>
-                        <img src="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=" alt="Slide 2" />
+                        <img src="https://www.acrylic-glass-photo.co.uk/wp-content/uploads/black-and-white-metal-prints-top.png" alt="Slide 2" />
                         <p className="legend1">Legend 2</p>
                     </div>
                 </div>
                 <div className='carousel-slide'>
                     <div className='image-container-carousel'>
-                        <img src="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=" alt="Slide 3" />
+                        <img src="https://www.acrylic-glass-photo.co.uk/wp-content/uploads/black-and-white-metal-prints-top.png" alt="Slide 3" />
                         <p className="legend1">Legend 3</p>
                     </div>
                 </div>

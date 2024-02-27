@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border: 2px solid black;
+    border-top: 4px solid black;
     padding: 1rem; /* Add padding for better spacing */
 }
 
