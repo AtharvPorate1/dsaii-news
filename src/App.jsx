@@ -2,7 +2,6 @@ import './App.css'
 import Headers from './Headers'
 import Socialmedia from './Socialmedia'
 import Cards from './cards'
-import Footer from './Footer'
 import Carousel from './Carousel'
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
         <Cards/> 
         <Carousel />
         <Socialmedia/>
-        <Footer/>
       </div>
     </>
   )
