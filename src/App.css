@@ -7,9 +7,18 @@
 .head {
     margin-top: 0.2rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+   
 }
+
+.head > img{
+    width: 150%;
+    height: auto;
+}
+ /*body goes here*/
+
+ body{
+    background: url("magicpattern-noise-1709014171602.png") no-repeat center center/cover;
+ }
 
 @media screen and (max-width: 897px) {
     .head {
@@ -37,14 +46,4 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-
-
-.footer_design {
-    background-color: #333;
-    color: #fff;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem 1rem;
 }
