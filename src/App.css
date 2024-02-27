@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-
-
 * {
     margin: 0px;
     padding: 0px;
@@ -29,13 +27,28 @@ p{
 .head {
     margin-top: 0.2rem;
     display: flex;
+    align-items: center;
     border-bottom: 4px solid black;
 }
-
-.head > img{
-    height: 19vh;
-    width: 46vb;
+.logo{
+    padding: 1.5rem;
 }
+
+.logo > img{
+    height: 25vh;
+    width: 25vb;
+}
+
+.heading{
+    padding: 1.5rem;
+}
+
+.heading h1 {
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-right: 0.5rem; 
+}
+
  /*body goes here*/
 
  body{
@@ -46,20 +59,34 @@ p{
 
 @media screen and (max-width: 897px) {
     .head {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px 0px;
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center; 
+        margin-top: 0px;
     }
 
+    .logo{
+        margin-left: 0.5rem;
+        padding: 0;
+        /* margin: 1rem 0; Add some spacing between logo and heading */
+    }
+    .heading{
+        text-align: center; 
+        margin-right: 0.5rem;
+        padding: 0.25rem;
+    }
+
+    .logo > img {
+        height: 30vh; 
+        width: 25vb; 
+    }
     body{
         margin: 0px;
     }
+    .heading h1 {
+        font-size: 1.25rem;
+        margin-right: 0.5rem;
+    }
 }
 
-.media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+

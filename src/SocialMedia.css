@@ -1,5 +1,8 @@
 .media {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     border-top: 4px solid black;
    
 }
