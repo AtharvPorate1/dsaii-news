@@ -15,8 +15,7 @@
   font-size: 1.5rem;
 }
 
-.image-container-carousel > img{
-  height: 75vh;
-  border: 2px solid black;
+.carousel-slide img {
+  height: 50vh;
   width: 50vb;
 }

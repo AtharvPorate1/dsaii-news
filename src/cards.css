@@ -3,6 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 5rem 0rem;
 }
 
 .new a {
@@ -15,10 +16,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     margin: 1rem 5rem;
     text-align: center;
     width: 200em;
+}
+
+.container h3 {
+    padding: 2rem 1rem;
+}
+
+.container p {
+    padding: 1rem 1rem;
 }
 
 .container img {

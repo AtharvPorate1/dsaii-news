@@ -6,10 +6,11 @@ import './custom-carousel.css';
 class MyCarousel extends Component {
     render() {
         return (
+            <>
             <Carousel autoPlay={true} interval={3000} infiniteLoop={true}>
                 <div className='carousel-slide'>
                     <div className='image-container-carousel'>
-                        <img src="https://images.unsplash.com/photo-1479660656269-197ebb83b540?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=" alt="Slide 1" />
+                        <img src="https://www.acrylic-glass-photo.co.uk/wp-content/uploads/black-and-white-metal-prints-top.png" alt="Slide 1" />
                         <p className="legend1">Legend 1</p>
                     </div>
                 </div>
@@ -26,6 +27,7 @@ class MyCarousel extends Component {
                     </div>
                 </div>
             </Carousel>
+            </>
         );
     }
 }
