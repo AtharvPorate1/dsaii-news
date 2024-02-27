@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className="main">
-        <Headers />
+        {/* <Headers /> */}
         <Cards/> 
         <Carousel />
         <Socialmedia/>
