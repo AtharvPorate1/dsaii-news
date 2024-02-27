@@ -5,7 +5,6 @@ const Headers = () => {
             <div className="clubname">
                 DSAII Newsletter
             </div>
-            {/* <div className="clubname">DSAII Newsletter</div> */}
         </div>
     );
 }

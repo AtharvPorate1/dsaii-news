@@ -1,37 +1,3 @@
-/* .media {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border: 2px solid black;
-}
-
-
-.icon {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 0.5rem;
-}
-
-.icons {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    gap: 2rem;
-    padding: 0.5rem 0.5rem;
-    margin: 0.5rem 0.5rem;
-}
-
-.icons a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-} */
-
-
 .media {
     display: flex;
     align-items: center;
