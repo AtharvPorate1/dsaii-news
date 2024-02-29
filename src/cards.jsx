@@ -1,31 +1,43 @@
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link for routing
 import './cards.css';
 
 const Cards = () => {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+    fetchArticles();
+  }, []);
+
+  const fetchArticles = async () => {
+    try {
+      const response = await fetch('./data/articles.json');
+      const data = await response.json();
+      setArticles(data);
+    } catch (error) {
+      console.error('Error fetching articles:', error);
+    }
+  };
+
+  // Function to truncate the description to the first 50 words
+  const truncateDescription = (description) => {
+    const words = description.split(' ');
+    return words.slice(0, 50).join(' ') + '...';
+  };
+
   return (
-    <><div className="new">
-      <a href="#" className="container">
-        <img src="https://wallpapers.com/images/hd/black-and-white-pictures-xxe2v48b1xkmr1n4.jpg" />
-        <h3>Medium Pub Crawl</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro a ea nihil ducimus, enim, perspiciatis consequatur dicta quos fugiat quas adipisci labore veniam. Ut delectus minima ipsa. Accusamus adipisci ipsam placeat, provident maiores numquam, soluta reiciendis velit animi ducimus ut, hic laudantium tempora? Vero minus quia inventore, repellat commodi quod!</p>
-      </a>
-      <a href="#" className="container">
-        <img src="https://wallpapers.com/images/hd/black-and-white-pictures-xxe2v48b1xkmr1n4.jpg" alt="Responsive image" />
-        <h3>Medium Pub Crawl</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus iure amet dolores facilis? Eos consequatur earum, sunt, harum autem neque illo cupiditate reiciendis maiores deleniti pariatur nemo itaque voluptatibus quisquam? Quibusdam veniam vero dignissimos! Facere voluptates possimus nihil pariatur officia rerum inventore, exercitationem, illum totam nemo temporibus nulla culpa.</p>
-      </a>
-    </div><div className="new">
-        <a href="#" className="container">
-          <img src="https://wallpapers.com/images/hd/black-and-white-pictures-xxe2v48b1xkmr1n4.jpg" />
-          <h3>Medium Pub Crawl</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro a ea nihil ducimus, enim, perspiciatis consequatur dicta quos fugiat quas adipisci labore veniam. Ut delectus minima ipsa. Accusamus adipisci ipsam placeat, provident maiores numquam, soluta reiciendis velit animi ducimus ut, hic laudantium tempora? Vero minus quia inventore, repellat commodi quod!</p>
-        </a>
-        <a href="#" className="container">
-          <img src="https://wallpapers.com/images/hd/black-and-white-pictures-xxe2v48b1xkmr1n4.jpg" alt="Responsive image" />
-          <h3>Medium Pub Crawl</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda accusamus iure amet dolores facilis? Eos consequatur earum, sunt, harum autem neque illo cupiditate reiciendis maiores deleniti pariatur nemo itaque voluptatibus quisquam? Quibusdam veniam vero dignissimos! Facere voluptates possimus nihil pariatur officia rerum inventore, exercitationem, illum totam nemo temporibus nulla culpa.</p>
-        </a>
-      </div></>
-    
+    <>
+      <div className="new">
+        {articles.map((article, index) => (
+          <Link to={`/article/${index}`} className="container" key={index}>
+            <img src={article.image} alt={article.title} />
+            <h3>{article.title}</h3>
+            <p>{truncateDescription(article.description)}</p>
+          </Link>
+        ))}
+      </div>
+    </>
   );
-}
+};
+
 export default Cards;

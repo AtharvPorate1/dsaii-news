@@ -1,6 +1,7 @@
 const Headers = () => {
     return (
         <div className="head">
+
             <div className="logo">
                 <img src="club_logo.png" alt="Logo-Club-Image" />
             </div>
@@ -9,6 +10,10 @@ const Headers = () => {
                 <h1>Artificial Intelligence</h1>
                 <h1>Inquisitive Club</h1>
             </div>
+
+            <img src="Navbar2.png" alt="Logo-Club-Image" />
+            <h1>Data Science & Artificial Intelligence Inquisitive Club</h1>
+
         </div>
     );
 }
