@@ -11,8 +11,11 @@ const Cards = () => {
 
   const fetchArticles = async () => {
     try {
-      const response = await fetch('./data/articles.json');
+      const response = await fetch('https://newsletter-backend-gnm5.onrender.com/articles');
       const data = await response.json();
+
+      
+      console.log(data)
       setArticles(data);
     } catch (error) {
       console.error('Error fetching articles:', error);
