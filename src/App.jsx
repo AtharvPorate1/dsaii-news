@@ -6,8 +6,8 @@ import Headers from './Headers';
 import Socialmedia from './Socialmedia';
 import Cards from './cards';
 import Carousel from './Carousel';
-import ArticleDetail from './ArticleDetails';
 import UploadPage from './UploadPage';
+import ArticleDetails from './ArticleDetails';
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
         <Headers />
         <Routes>
           <Route path="/" element={<Cards />} />
-          <Route path="/upload" element={<UploadPage/>} />
-          <Route path="/article/:id" element={<ArticleDetail />} />
+          {/* <Route path="/upload" element={<UploadPage/>} /> */}
+          <Route path="/article/:id" element={<ArticleDetails />} />
         </Routes>
         <Carousel />
         <Socialmedia />
