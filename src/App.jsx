@@ -1,4 +1,3 @@
-// App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
@@ -15,11 +14,12 @@ function App() {
       <div className="main">
         <Headers />
         <Routes>
-          <Route path="/" element={<Cards />} />
-          {/* <Route path="/upload" element={<UploadPage/>} /> */}
+          <Route path="/" element={<>
+            <Cards />
+            <Carousel />
+          </>} />
           <Route path="/article/:id" element={<ArticleDetails />} />
         </Routes>
-        <Carousel />
         <Socialmedia />
       </div>
     </Router>
