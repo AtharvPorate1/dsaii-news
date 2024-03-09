@@ -34,26 +34,6 @@
   margin-bottom: 0.5rem;
 }
 
-/* @media screen and (max-width: 850px) {
-    .new {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .container {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 520px) and (min-width: 40px) {
-    .new {
-        flex-direction: column;
-        padding: 0rem;
-    }
-    .container {
-        padding: 1rem 1rem;
-    }
-} */
 
 @media screen and (max-width: 520px) {
   .new {
@@ -66,4 +46,16 @@
     padding: 1rem 1rem; /* Adjust padding for smaller screens */
     width: 90%;
   }
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 0rem 1rem;
+}
+
+.description p{
+  padding: 1rem;
 }

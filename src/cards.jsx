@@ -44,7 +44,9 @@ const Cards = () => {
               <Link to={`/article/${article._id}`}>
                 <img src={article.Image} alt="Article Image" />
                 <h3>{stripMdExtension(article.name)}</h3>
+                <div className="description">
                 <p>{truncateDescription(decodedData)}</p>
+                </div>
               </Link>
             </div>
           );
