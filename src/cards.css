@@ -16,6 +16,11 @@
   color: #333;
 }
 
+.container a {
+  text-decoration: none; /* Remove the default underline for links */
+  color: inherit; /* Inherit the color from the parent (.container) */
+}
+
 .container img {
   width: 100%;
   height: auto;
@@ -24,8 +29,10 @@
 }
 
 .container h3 {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
+  color: black;
 }
 
 .container p {

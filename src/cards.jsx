@@ -45,7 +45,7 @@ const Cards = () => {
                 <img src={article.Image} alt="Article Image" />
                 <h3>{stripMdExtension(article.name)}</h3>
                 <div className="description">
-                <p>{truncateDescription(decodedData)}</p>
+                {/* <p>{truncateDescription(decodedData)}</p> */}
                 </div>
               </Link>
             </div>
