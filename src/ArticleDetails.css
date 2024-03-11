@@ -4,7 +4,8 @@
     justify-content: center;
     flex-direction: column;
     text-align: justify;
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
+    padding-right: 8rem;
     line-height: 1.5;
     font-size: 1rem;
 }
@@ -15,3 +16,15 @@
 .markDown h2 {
     font-weight: 500;
 }
+
+@media screen and (max-width: 520px) {
+    .markDown{
+        padding: 0.75rem 2rem;
+    }
+
+    .markDown h2{
+        padding: 1rem;
+        text-align: left;
+        margin-right: 1rem;
+    }
+  }
