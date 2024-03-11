@@ -1,0 +1,35 @@
+.carousel-slide {
+  padding: 5rem 20rem;
+  border-top: 4px solid black;
+}
+
+
+.legend1 {
+  margin: 1rem auto;
+  width: 63%;
+  height: 10vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+
+.image-container-carousel {
+  border: 2px solid black;
+}
+.carousel-slide img {
+  height: 50vh;
+  width: 50vb;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .carousel-slide {
+    padding: 2rem; /* Adjust padding for even smaller screens */
+  }
+
+  .legend1 {
+    font-size: 1rem; /* Decrease font size on smaller screens */
+  }
+}
