@@ -11,7 +11,7 @@ const Cards = () => {
 
   const fetchArticles = async () => {
     try {
-      const response = await fetch('https://newsletter-backend-gnm5.onrender.com/articles');
+      const response = await fetch('https://newsletter-backend-1.onrender.com/articles');
       const data = await response.json();
       console.log(data);
       setArticles(data);

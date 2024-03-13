@@ -13,7 +13,7 @@ const ArticleDetails = () => {
 
   const fetchArticleDetails = async () => {
     try {
-      const response = await fetch(`https://newsletter-backend-gnm5.onrender.com/articles/${id}`);
+      const response = await fetch(`https://newsletter-backend-1.onrender.com/articles/${id}`);
       const data = await response.json();
       
       console.log('Fetched article details:', data);
